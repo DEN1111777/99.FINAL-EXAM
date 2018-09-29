@@ -1,0 +1,115 @@
+.portfolio__title {
+	margin-bottom: 0;
+	border-right: 2px solid $accent;
+}
+
+.portfolio__nav {
+	margin-bottom: 15px;
+}
+
+.portfolio__list {
+	display: flex;
+	flex-direction: raw;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	&-item {
+		padding-left: 12px;
+		padding-right: 12px;
+		border: 1px solid transparent;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: 600;
+		cursor: pointer;
+		// &:hover {
+		// 	border: 1px solid #7beec7;
+		// }
+		&:first-child {
+			color: $color-title;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+		&--active {
+			// background-color: #7beec7;
+			background-image: linear-gradient(to right, $accent 50%, transparent 50%);
+			background-size: 210% 200%;
+			background-position: 99% 50%;
+			color: $color-white;
+			animation-name: color;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			animation-fill-mode: forwards;
+		}
+	}
+}
+
+@keyframes color {
+	0% {
+		background-position: 99% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.portfolio__grid {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.portfolio__grid-sizer,
+.portfolio__grid-item {
+	width: 25%	;
+}
+
+.portfolio__grid-item {
+	display: block;
+	box-sizing: border-box;
+	padding: $grid-padding;
+}
+
+.portfolio__grid-img {
+	position: relative;
+}
+
+.portfolio__grid-overlay {
+	position: absolute;
+	margin: $grid-padding;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(0, 0, 0);
+	background-image: url(../img/icons/magnifier-tool.svg);
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: 50% 50%;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+}
+
+.portfolio__grid-item:hover .portfolio__grid-overlay {
+	visibility: visible;
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio__grid-sizer,
+	.portfolio__grid-item {
+		width: 50%;
+	}
+
+	.portfolio__title {
+		margin-bottom: 10px;
+		margin-right: 20px;
+		margin-left: 20px;
+		border-bottom: 2px solid $accent;
+		border-right: 0;
+	}
+}

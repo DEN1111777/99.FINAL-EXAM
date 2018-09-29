@@ -1,0 +1,21 @@
+.testimonials {
+	box-sizing: border-box;
+	padding-top: 178px;
+	padding-bottom: 50px;
+	background-color: $accent;
+}
+
+.testimonials__slide-wrapper {
+	text-align: center;
+	color: $color-white;
+	cursor: all-scroll;
+}
+
+.testimonials__text {
+	font-size: 24px;
+}
+
+.testimonials__name {
+	margin-bottom: 100px;
+	font-size: 12px;
+}

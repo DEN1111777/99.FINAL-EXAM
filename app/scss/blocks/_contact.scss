@@ -1,0 +1,38 @@
+.contact {
+	padding: 80px 0;
+	background-color: #f5f5f5;
+}
+
+.contact__termin {
+	color: $color-title;
+}
+
+// #contact .contact-content {
+// 	width: 41.67%;
+// 	margin: auto;
+// 	text-align: center;
+// 	margin-bottom: 30px;
+// }
+
+.contact__form .row {
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contact__form input,
+.contact__form textarea {
+		padding: 14px;
+		border: none;
+		width: 100%;
+		&:focus {
+			outline: none;
+			box-shadow: -3px 3px $accent;
+		}
+}
+
+.contact__button {
+	margin: auto;
+	border: none;
+}

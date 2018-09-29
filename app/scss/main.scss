@@ -1,0 +1,23 @@
+@import "vars.scss";
+@import "fonts";
+@import "libs";
+@import "base";
+
+@import "blocks/_container.scss";
+@import "blocks/_button.scss";
+@import "blocks/_main-logo.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_my-logo.scss";
+@import "blocks/_about.scss";
+@import "blocks/_services.scss";
+@import "blocks/_portfolio.scss";
+@import "blocks/_draw-border.scss";
+@import "blocks/_progress-bar.scss";
+@import "blocks/_testimonials.scss";
+@import "blocks/_contact.scss";
+@import "blocks/_main-footer.scss";
+
+
+
+@import "media"; // Always at the end

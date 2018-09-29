@@ -1,0 +1,59 @@
+.about__numbers {
+	display: flex;
+	min-height: 240px;
+	align-items: center;
+	background-color: $accent;
+}
+
+.about__numbers-list {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.about__numbers-item {
+	display: flex;
+	align-items: center;
+}
+
+.about__numbers-svg {
+	width: 40px;
+	height: 40px;
+	fill: white;
+}
+
+.about__numbers-text {
+	margin-left: 15px;
+	margin-bottom: 0;
+	font-family: $title-font;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $color-white;
+
+	& span {
+		font-size: 18px;
+		line-height: 35px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about__numbers-item {
+		margin-bottom: 25px;
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.about__numbers-text {
+		font-size: 10px;
+		font-weight: 400;
+		& span {
+			font-size: 15px;
+			line-height: 30px;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.my-logo {
+	display: block;
+	margin: auto;
+	transform: scaleY(0.7);
+	margin-top: -20px;
+	cursor: pointer;
+	// width: 500px;
+	// height: 300px;
+}
+
+#D1 {
+	animation-name: draw;
+	stroke-dasharray: 875;
+	stroke-dashoffset: 875;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+#D2 {
+	animation-name: draw;
+	stroke-dasharray: 1340;
+	stroke-dashoffset: 1340;
+	animation-duration: .8s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+
+#A1 {
+	animation-name: draw;
+	stroke-dasharray: 940;
+	stroke-dashoffset: -940;
+	animation-duration: .8s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+#A2 {
+	animation-name: draw;
+	stroke-dasharray: 220;
+	stroke-dashoffset: 220;
+	animation-duration: .4s;
+	animation-delay: 1.9s;
+	animation-fill-mode: forwards;
+}
+
+#S1 {
+	animation-name: draw;
+	stroke-dasharray: 1565;
+	stroke-dashoffset: 1565;
+	animation-duration: 1s;
+	animation-delay: 2.1s;
+	animation-fill-mode: forwards;
+}
+
+#H1 {
+	animation-name: draw;
+	stroke-dasharray: 785;
+	stroke-dashoffset: 785;
+	animation-duration: .7s;
+	animation-delay: 2.6s;
+	animation-fill-mode: forwards;
+}
+
+#H2 {
+	animation-name: draw;
+	stroke-dasharray: 615;
+	stroke-dashoffset: 615;
+	animation-duration: .7s;
+	animation-delay: 3.1s;
+	animation-fill-mode: forwards;
+}
+
+#aa,
+#ss {
+	fill: transparent;
+	animation-name: fill;
+	animation-duration: .5s;
+	animation-delay: 3.8s;
+	animation-fill-mode: forwards;
+}
+
+#Blick {
+	transform: translate(-3300px);
+	animation-name: blick;
+	animation-duration: 10s;
+	animation-delay: 4.2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes draw {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fill {
+	100% {
+		fill: #000000;
+	}
+}
+
+@keyframes blick {
+	100% {
+		transform: translate(6300px);
+	}
+}

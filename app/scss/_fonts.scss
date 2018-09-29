@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@include font-face("Montserrat", "../fonts/MontserratRegular/MontserratRegular");
+@include font-face("Montserrat", "../fonts/MontserratMedium/MontserratMedium", 500);
+@include font-face("Montserrat", "../fonts/MontserratSemiBold/MontserratSemiBold", 600);
+
+@include font-face("Nunito Sans", "../fonts/NunitoSansRegular/NunitoSansRegular");
+@include font-face("Nunito Sans", "../fonts/NunitoSansBold/NunitoSansBold", 700);
+

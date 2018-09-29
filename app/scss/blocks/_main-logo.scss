@@ -1,0 +1,24 @@
+.main-logo {
+	width: 39px;
+	height: 52px;
+	fill: lighten($accent, 40%);
+	stroke: $accent;
+	stroke-dasharray: 180;
+	stroke-dashoffset: 180;
+	animation-name: logo-stroke, logo-fill;
+	animation-duration: 2s, 1s;
+	animation-delay: 0.5s, 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes logo-stroke {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes logo-fill {
+	100% {
+		fill: $accent; 
+	}
+}

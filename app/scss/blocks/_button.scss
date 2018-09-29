@@ -1,0 +1,27 @@
+.button {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 54px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: $accent;
+	text-transform: uppercase;
+	color: $color-white;
+	transition: all .3s;
+
+	&:hover {
+		background-color: darken($accent, 5%);
+		color: $color-white;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: -3px 3px $color-gray;
+	}
+	&:active {
+		transform: scale(0.95);
+		box-shadow: none;
+	}
+}

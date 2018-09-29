@@ -1,0 +1,38 @@
+.draw-border {
+	position: relative;
+	transition: color 0.25s;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		border: 2px solid transparent;
+		width: 0;
+		height: 0;
+	}
+	&::before {
+		top: 0;
+		left: 0;
+	}
+	&::after {
+		// bottom: 0;
+		// right: 0;
+		top: 0;
+		left: 0;
+	}
+	&:hover::before,
+	&:hover::after {
+		width: 100%;
+		height: 100%;
+	}
+	&:hover::before {
+		border-top-color: $accent;
+		border-right-color: $accent;
+		transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+	}
+	&:hover::after {
+		border-bottom-color: $accent;
+		border-left-color: $accent;
+		// transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+		transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+	}
+}

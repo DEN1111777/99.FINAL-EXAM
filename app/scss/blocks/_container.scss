@@ -1,0 +1,21 @@
+.container__intro {
+	text-align: center;
+}
+
+.container__title {
+	margin-bottom: 10px;
+	font-family: $title-font;
+	font-size: 1.875rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: $color-title;
+}
+
+.container__title--small {
+	font-size: 1.4rem;
+}
+
+.container__title--left {
+	text-align: left;
+}
