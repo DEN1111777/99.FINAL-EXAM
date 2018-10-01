@@ -138,7 +138,7 @@
 			position: mapCenter,
 			map: map,
 			title: 'Hello, I am here.',
-			icon: '/img/map-marker.png'
+			icon: 'img/map-marker.png'
 		});
 
 		var infowindow = new google.maps.InfoWindow({

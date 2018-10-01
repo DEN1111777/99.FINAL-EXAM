@@ -92,10 +92,7 @@ gulp.task('img', function () {
 
 // Такска для компиляции файлов на продакшн
 gulp.task('build', ['clean', 'img', 'styles', 'js'], function () {
-	var buidCss = gulp.src([
-		'app/css/main.css',
-		'app/css/libs.min.css',
-	])
+	var buidCss = gulp.src('app/css/**/*')
 		.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*')
