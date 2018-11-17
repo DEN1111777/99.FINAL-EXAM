@@ -9,6 +9,11 @@
 	animation-duration: 2s, 1s;
 	animation-delay: 0.5s, 2s;
 	animation-fill-mode: forwards;
+
+	&:focus {
+		outline: none;
+		box-shadow: -3px 3px $color-gray;
+	}
 }
 
 @keyframes logo-stroke {

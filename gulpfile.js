@@ -48,7 +48,7 @@ gulp.task('js', function() {
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(uglify()) // Minify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
@@ -68,7 +68,7 @@ gulp.task('js', function() {
 // 	}))
 // });
 
-// Чистка папки продакшена
+// Чистка папки на продакшн
 gulp.task('clean', function () {
 	return del.sync('dist');
 });
@@ -78,7 +78,7 @@ gulp.task('clear', function () {
 	return cache.clearAll();
 });
 
-// сжатие картинок для продакшена
+// сжатие картинок на продакшн
 gulp.task('img', function () {
 	return gulp.src('app/img/**/*')
 		.pipe(cache(imagemin({

@@ -42,6 +42,7 @@
 	border-radius: 50%;
 	font-size: 0;
 	transition: all .2s ease-in;
+	outline: none;
 
 	&::after {
 		content: '';
@@ -60,6 +61,11 @@
 	&:hover {
 		background-color: darken($accent, 10%);
 		transform: scale(1.1, 1.1);
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: -2px 3px $color-gray;
 	}
 }
 

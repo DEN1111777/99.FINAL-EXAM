@@ -4,8 +4,8 @@
   "description": "Final Exam based on Pirrol template",
   "main": "index.js",
   "scripts": {
-	"start": "gulp watch",
-	"build": "gulp build",
+    "start": "gulp watch",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DaSh",

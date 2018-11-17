@@ -1,6 +1,10 @@
+.about {
+	padding-top: 40px;
+}
+
 .about__numbers {
 	display: flex;
-	min-height: 240px;
+	min-height: 200px;
 	align-items: center;
 	background-color: $accent;
 }

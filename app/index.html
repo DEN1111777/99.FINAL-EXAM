@@ -29,20 +29,27 @@
 	<header class="main-header">
 		<div class="main-nav">
 			<div class="container  main-nav__container">
-				<a href="#hero" id="beetroot-logo">
+				<a href="#hero" class="main-nav__beetroot-logo" id="beetroot-logo">
 					<svg class="main-logo  svg">
 						<use xlink:href="#main-logo" />
 					</svg>
 				</a>
-				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-					<li class="main-nav__item"><a href="#about" class="main-nav__link">About</a></li>
-					<li class="main-nav__item"><a href="#services" class="main-nav__link">Services</a></li>
-					<li class="main-nav__item"><a href="#work" class="main-nav__link">Work</a></li>
-					<!-- <li class="main-nav__item"><a href="#process" class="main-nav__link">Process</a></li> -->
-					<li class="main-nav__item"><a href="#testimonials" class="main-nav__link">Testimonials</a></li>
-					<li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
-				</ul>
+				<div class="main-nav__hamburger" id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+				
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#hero" class="main-nav__link">Home</a></li>
+						<li class="main-nav__item"><a href="#about" class="main-nav__link">About</a></li>
+						<li class="main-nav__item"><a href="#services" class="main-nav__link">Services</a></li>
+						<li class="main-nav__item"><a href="#work" class="main-nav__link">Work</a></li>
+						<!-- <li class="main-nav__item"><a href="#process" class="main-nav__link">Process</a></li> -->
+						<li class="main-nav__item"><a href="#testimonials" class="main-nav__link">Testimonials</a></li>
+						<li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!-- /.main-nav -->
@@ -125,35 +132,23 @@
 						<div class="services__descriptions">
 							<div class="services__description">
 								<h3 class="services__description-title">Development</h3>
-								<p class="services__description-text">At vero eos et accusamus et <span>iusto</span> odio dignissimos ducimus qui
-									blanditiis praesentium voluptatum deleniti 111</p>
-								<p class="services__description-text  services__description-text--small">quos dolores et quas molestias excepturi
-									sint occaecati cupiditate non provident, <span>similique sunt</span> in culpa qui officia deserunt mollitia
-									animi, id est laborum et dolorum fuga. 111</p>
+								<p class="services__description-text">The process in which someone or something grows or changes and becomes more <span>advanced</span></p>
+								<p class="services__description-text  services__description-text--small">The purpose of development is a <span>rise</span> in the level and <span>quality of life</span> of the population, and the creation or expansion of local regional income and employment opportunities, without damaging the resources of the environment.</p>
 							</div>
 							<div class="services__description  services__description--active">
 								<h3 class="services__description-title">Graphic Design</h3>
-								<p class="services__description-text">At vero eos et accusamus et <span>iusto</span> odio dignissimos ducimus qui
-									blanditiis praesentium voluptatum deleniti 222</p>
-								<p class="services__description-text  services__description-text--small">quos dolores et quas molestias excepturi
-									sint occaecati cupiditate non provident, <span>similique sunt</span> in culpa qui officia deserunt mollitia
-									animi, id est laborum et dolorum fuga. 222</p>
+								<p class="services__description-text">It's art with a purpose. It involves a <span>creative</span> and systematic plan to solve a problem, with the use of images, symbols or even words.</p>
+								<p class="services__description-text  services__description-text--small">The term graphic <span>design was coineds</span> by William Addison Dwiggins in 1922. However, the origins of graphic design can be traced from the origins of human existence.</p>
 							</div>
 							<div class="services__description">
 								<h3 class="services__description-title">Gaming</h3>
-								<p class="services__description-text  services__description-text">At vero eos et accusamus et <span>iusto</span>
-									odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 333</p>
-								<p class="services__description-text  services__description-text--small">quos dolores et quas molestias excepturi
-									sint occaecati cupiditate non provident, <span>similique sunt</span> in culpa qui officia deserunt mollitia
-									animi, id est laborum et dolorum fuga. 333</p>
+								<p class="services__description-text  services__description-text">Gaming refers to <span>playing</span> electronic games, whether through consoles, computers, mobile phones or another medium altogether.</p>
+								<p class="services__description-text  services__description-text--small">Gaming is a nuanced term that suggests <span>regular gameplay</span>, possibly as a hobby. Although traditionally a solitary form of relaxation :)</p>
 							</div>
 							<div class="services__description">
 								<h3 class="services__description-title">Connection</h3>
-								<p class="services__description-text">At vero eos et accusamus et <span>iusto</span> odio dignissimos ducimus qui
-									blanditiis praesentium voluptatum deleniti 444</p>
-								<p class="services__description-text  services__description-text--small">quos dolores et quas molestias excepturi
-									sint occaecati cupiditate non provident, <span>similique sunt</span> in culpa qui officia deserunt mollitia
-									animi, id est laborum et dolorum fuga. 444</p>
+								<p class="services__description-text">Setting up of resources so that a particular object such as a <span>database</span> or file can be read or written to.</p>
+								<p class="services__description-text  services__description-text--small"> encodes an open <span>request</span> to the operating system that ensures that system resources are set up, encodes reads and writes requests, and then encodes a close when a connection is no longer needed.</p>
 							</div>
 						</div>
 						<!-- /.description -->
@@ -330,7 +325,7 @@
 					<h2 class="container__title  wow flipInX">Need a Project?</h2>
 					<p class="container__sub-title">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
 				</div>
-				<div class="row">
+				<div class="row  contact__content">
 					<section class="contact__info  col-md-4">
 						<h2 class="container__title  container__title--left">Contact Info:</h2>
 						<p class="container__sub-title">To give give beginning divide, cattle. Give moving
@@ -349,7 +344,7 @@
 						</dl>
 					</section>
 					<!-- /.contact__info-->
-					<form class="contact__form col-md-8" action="#" method="POST">
+					<form class="contact__form col-md-8" action="#" method="">
 						<div class="row">
 							<div class="col-xs-12 col-sm-6">
 								<input type="text" name="name" placeholder="Your Name">
@@ -369,7 +364,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<button type="submit" class="contact__button button">Send Message</button>
+							<button type="submit" class="contact__button  button" value="Submit">Send Message</button>
 						</div>
 					</form>
 				</div>
@@ -384,28 +379,28 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-5">
+				<div class="col-12 col-md-6 col-lg-5">
 					<p class="footer__title">DaSh Design, Inc.</p>
 					<p>&copy; 2018 DaSh. All rights reserved.
 						</br> Designed by DaSh.</p>
 				</div>
-				<div class="col-12 col-md-3  main-footer__contact">
+				<div class="col-12 col-md-6 col-lg-3  main-footer__contact">
 					<a href="mailto:hello@pirolltheme.com">den1111777@gmail.com</a>
 					<a href="tel:+38068006385">+38 068 000 6385</a>
 				</div>
-				<div class="col-4 col-md-1">
+				<div class="col-4 col-lg-1">
 					<a href="#">Projects</a>
 					<a href="#">About</a>
 					<a href="#">Services</a>
 					<a href="#">Career</a>
 				</div>
-				<div class="col-4 col-md-1">
+				<div class="col-4 col-lg-1">
 					<a href="#">News</a>
 					<a href="#">Events</a>
 					<a href="#">Contact</a>
 					<a href="#">Legals</a>
 				</div>
-				<div class="col-4 col-md-1 offset-md-1">
+				<div class="col-4 col-lg-1 offset-lg-1">
 					<a href="#">Facebook</a>
 					<a href="#">Twitter</a>
 					<a href="#">Instagram</a>
